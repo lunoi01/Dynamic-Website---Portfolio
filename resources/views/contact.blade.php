@@ -6,6 +6,6 @@
 </head>
 <body>
     <h2> This is a contact page from controller </h2>
-    <a href="{{ url('/about') }}"> About </a> //url is longer than route but this is an examlple
+    <a href="{{ url('/about') }}"> About </a> <!--url is longer than route but this is an example--!>
 </body>
 </html>
