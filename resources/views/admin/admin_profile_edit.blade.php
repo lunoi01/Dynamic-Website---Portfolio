@@ -50,7 +50,7 @@
                     <div class="row mb-3">
                     <label for="example-text-input" class="col-sm-2 col-form-label"></label>
                         <div class="col-sm-10">
-                        <img id="showImage" class="rounded avatar-lg" alt="200x200" src="{{ asset('backend/assets/images/users/avatar-4.jpg') }}" 
+                        <img id="showImage" class="rounded avatar-lg" alt="200x200" src="{{ (!empty($editData->profile_image))? url('upload/admin_images/'.$editData->profile_image):url('upload/no_image.jpg') }}"
                         data-holder-rendered="true">                
                         </div>
                     </div>

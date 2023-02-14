@@ -9,7 +9,9 @@
         <div class="col-lg-6">
             <div class="card">
             <center>
-            <img class="rounded-circle avatar-xl" alt="200x200" src="{{ asset('backend/assets/images/users/avatar-4.jpg') }}" data-holder-rendered="true">                
+            <hr>
+            <img class="rounded-circle avatar-xl" alt="200x200" 
+            src="{{ (!empty($adminData->profile_image))? url('upload/admin_images/'.$adminData->profile_image):url('upload/no_image.jpg') }}" data-holder-rendered="true">                
             </center>
                 <div class="card-body">
                     <h4 class="card-title">Name: {{ $adminData->name}}</h4>
