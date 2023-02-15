@@ -36,7 +36,7 @@
                     <div class="row mb-3">
                         <label for="example-text-input" class="col-sm-2 col-form-label">Short Description</label>
                         <div class="col-sm-10">
-                        <textarea required="" name="short_description" class="form-control" rows="5" >{{ $aboutpage->short_title }}</textarea>
+                        <textarea required="" name="short_description" class="form-control" rows="5" >{{ $aboutpage->short_description }}</textarea>
                         </div>
                     </div>
                     <!-- end row -->
@@ -44,7 +44,7 @@
                     <div class="row mb-3">
                         <label for="example-text-input" class="col-sm-2 col-form-label">Long Description </label>
                         <div class="col-sm-10">
-                            <textarea id="elm1" name="long_description">{{ $aboutpage->short_title }}</textarea>
+                            <textarea id="elm1" name="long_description">{{ $aboutpage->long_description}}"</textarea>
                         </div>
                     </div>
                     <!-- end row -->
@@ -52,7 +52,7 @@
                     <div class="row mb-3">
                         <label for="example-text-input" class="col-sm-2 col-form-label">About Image</label>
                         <div class="col-sm-10">
-                            <input name="about_image" class="form-control" type="file" value="{{ $aboutpage->about_image }}" id="image">
+                            <input name="about_image"  class="form-control" type="file" value="{{ $aboutpage->about_image }}" id="image">
                         </div>
                     </div>
                     <!-- end row -->
