@@ -41,8 +41,7 @@
                         <td> {{ $i++ }}</td>
                         <td> {{ $item->portfolio_name }}</td>
                         <td> {{ $item->portfolio_title }}</td>
-                        <td><img src="{{ asset($item->portfolio_image) }}" 
-                        style="width: 60px; height: 50px;"></td>
+                        <td> <img src="{{ asset($item->portfolio_image) }}" style="width: 60px; height: 50px;"> </td>
 
                         <td>
                             <a href="{{ route('edit.multi.image',$item->id) }}" class="btn btn-info sm" title="Edit Data"> <i class="fas fa-edit"></i> </a>
