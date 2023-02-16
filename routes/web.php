@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Home\HomeSliderController;
 use App\Http\Controllers\Home\AboutController;
+use App\Http\Controllers\Home\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,7 +55,11 @@ Route::controller(AboutController::class)->group(function () {
     Route::get('/delete/multi/image/{id}','DeleteMultiImage')->name('delete.multi.image');
 });
 
+ // Porfolio All Route 
+ Route::controller(PortfolioController::class)->group(function () {
+    Route::get('/all/portfolio', 'AllPortfolio')->name('all.portfolio');
 
+});
 
 Route::get('/dashboard', function () {
     return view('admin.index');
