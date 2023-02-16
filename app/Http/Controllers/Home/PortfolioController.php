@@ -14,4 +14,13 @@ class PortfolioController extends Controller
         $portfolio = Portfolio::latest()->get();
         return view('admin.portfolio.portfolio_all',compact('portfolio'));
     } // End Method
+
+    public function AddPortfolio(){
+
+        return view('admin.portfolio.portfolio_add');
+    } // End Method
+
+    public function StorePortfolio(Request $request){
+        
+    } // End Method
 }
