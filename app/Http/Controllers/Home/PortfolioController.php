@@ -102,7 +102,7 @@ class PortfolioController extends Controller
         } //end Else
     } // End Method
 
-        public function DeletePortfolio($id){
+     public function DeletePortfolio($id){
 
             $portfolio = Portfolio::findOrFail($id);
             $img = $portfolio->portfolio_image;
@@ -117,5 +117,13 @@ class PortfolioController extends Controller
             return redirect()->back()->with($notification);
         
 
+    } // End Method
+
+    public function PortfolioDetails($id){
+
+        $portfolio = Portfolio::findOrFail($id);
+
+        return view('frontend.portfolio_details',compact('portfolio'));
+    
     } // End Method
 }
