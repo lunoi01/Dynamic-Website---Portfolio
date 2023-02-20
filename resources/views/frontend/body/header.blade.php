@@ -7,6 +7,7 @@
                             <div class="menu__wrap">
                                 <nav class="menu__nav">
                                     <div class="logo">
+                        
                                         <a href="index.html" class="logo__black"><img src="{{ asset('frontend/assets/img/logo/logo_black.png') }}" alt=""></a>
                                         <a href="index.html" class="logo__white"><img src="{{ asset('frontend/assets/img/logo/logo_white.png') }}" alt=""></a>
                                     </div>
