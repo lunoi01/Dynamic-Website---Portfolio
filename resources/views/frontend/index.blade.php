@@ -337,10 +337,12 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="homeContact__form">
-                        <form action="#">
-                            <input type="text" placeholder="Enter name*">
-                            <input type="email" placeholder="Enter mail*">
-                            <input type="number" placeholder="Enter number*">
+                        <form method="post" action="{{ route('store.message') }}">
+                        @csrf
+                            <input type="text" name ="name" placeholder="Enter name*">
+                            <input type="email" name="email" placeholder="Enter email*">
+                            <input type="number" name="phone" placeholder="Enter number*">
+                            <input type="text"name= "subject" placeholder="Enter subject*">
                             <textarea name="message" placeholder="Enter Massage*"></textarea>
                             <button type="submit">Send Message</button>
                         </form>
