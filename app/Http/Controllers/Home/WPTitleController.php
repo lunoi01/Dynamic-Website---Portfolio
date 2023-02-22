@@ -9,15 +9,15 @@ class WPTitleController extends Controller
 {
     public function WPTitle(){
         $service = WPTitle::latest()->get();
-        return view('admin.WorkingProcess.wp_Title',compact('service'));
+        return view('admin.working_process.wp_Title',compact('service'));
     }
 
      public function EditWPTitle($id){
-         $service = WPTitle::findOrFail($id);;
+         $service = WPTitle::findOrFail($id);
        
          $categories = WPTitle::orderBy('wp_title','ASC')->get();
          
-         return view('admin.WorkingProcess.edit_wptitle',compact('service','categories'));
+         return view('admin.working_process.edit_wptitle',compact('service','categories'));
      }// End Method
     
 
@@ -39,4 +39,5 @@ class WPTitleController extends Controller
         return redirect()->back()->with($notification); 
 
         } // end method
+
 }

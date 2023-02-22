@@ -1,6 +1,6 @@
 @php
  
-$service = App\Models\ServiceTitle::find(1);
+$serviceN = App\Models\ServiceTitle::find(1);
 $serviceS = App\Models\Service::all();
 @endphp
 
@@ -11,7 +11,7 @@ $serviceS = App\Models\Service::all();
                 <div class="col-xl-5 col-lg-6 col-md-8">
                     <div class="section__title">
                         <span class="sub-title">02 - my Services</span>
-                        <h2 class="title">{{ $service->service_title }}</h2>
+                        <h2 class="title">{{ $serviceN->service_title }}</h2>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6 col-md-4">

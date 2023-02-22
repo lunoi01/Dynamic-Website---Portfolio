@@ -20,16 +20,16 @@
 
             <h4 class="card-title">Edit WP Title </h4>
 
-            <form method="post" action="" enctype="multipart/form-data">
+            <form method="post" action="{{ route('update.wptitle')}}" enctype="multipart/form-data">
                 @csrf
 
-                <input type="hidden" name="id" value="{{$wp->id}}">
+                <input type="hidden" name="id" value="{{$service->id}}">
 
 
               <div class="row mb-3">
                 <label for="example-text-input" class="col-sm-2 col-form-label">WP Title </label>
                 <div class="col-sm-10">
-                    <input name="wp_title" value="{{ $wp->wp_title}}" class="form-control" type="text"> 
+                    <input name="wp_title" value="{{ $service->wp_title}}" class="form-control" type="text"> 
                 </div>
             </div>
             <!-- end row -->

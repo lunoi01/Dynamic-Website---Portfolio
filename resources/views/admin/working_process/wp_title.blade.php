@@ -43,8 +43,8 @@
 
                             <td>
 
-
-                            <a href="{{ route ('edit.wptitle',$service->id) }]" class="btn btn-info sm" title="Edit Working Process Title"> <i class="fas fa-edit"></i> </a>
+                            
+                            <a href="{{ route ('edit.wptitle',$item->id) }}" class="btn btn-info sm" title="Edit Working Process Title"> <i class="fas fa-edit"></i> </a>
                            
                             </td>
 

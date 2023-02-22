@@ -71,6 +71,8 @@ Route::controller(AboutController::class)->group(function () {
     Route::post('/update/portfolio', 'UpdatePortfolio')->name('update.portfolio');
     Route::get('/delete/portfolio{id}','DeletePortfolio')->name('delete.portfolio');
     Route::get('/portfolio/details/{id}','PortfolioDetails')->name('portfolio.details');
+    Route::get('/portfolio','HomePortfolio')->name('home.portfolio');
+
 
 });
 
@@ -134,6 +136,8 @@ Route::controller(FooterController::class)->group(function () {
     Route::post('/update/serviceInformation', 'UpdateServiceInfo')->name('update.info');
     Route::get('/delete/service/{id}', 'DeleteService')->name('delete.service'); 
 
+    Route::get('/service','HomeService')->name('home.service');
+
  });
 
   //Working Process Title Route
@@ -141,7 +145,8 @@ Route::controller(FooterController::class)->group(function () {
     Route::get('viewS', 'WPTitle')->name('WP.title');
 
     Route::get('/edit/WPTitle/{id}', 'EditWPTitle')->name('edit.wptitle');
-     Route::post('/update/WPTitle', 'UpdateWPTitle')->name('update.WPTitle');
+     Route::post('/update/WPTitle', 'UpdateWPTitle')->name('update.wptitle');
+
 
  });
   
