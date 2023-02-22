@@ -96,6 +96,44 @@
                 </ul>
             </li>
 
+            <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="ri-profile-line"></i>
+                    <span>Service Page Setup </span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('service.title') }}">Service Title Section</a></li>
+                </ul>
+
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('add.service') }}">Add Service Section</a></li>
+                </ul>
+
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('service.info') }}">All Service Information</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="ri-profile-line"></i>
+                    <span>Working Process Page Setup </span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('WP.title') }}"">Working Process Title </a></li>
+                </ul>
+
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="">Add Working Process</a></li>
+                </ul>
+
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="">All Working Process</a></li>
+                </ul>
+            </li>
+
+
+
     </div>
     <!-- Sidebar -->
 </div>

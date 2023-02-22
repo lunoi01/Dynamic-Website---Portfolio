@@ -10,6 +10,9 @@ use App\Http\Controllers\Home\BlogCategoryController;
 use App\Http\Controllers\Home\BlogController;
 use App\Http\Controllers\Home\FooterController;
 use App\Http\Controllers\Home\ContactController;
+use App\Http\Controllers\Home\ServiceController;
+use App\Http\Controllers\Home\ServiceTitleController;
+use App\Http\Controllers\Home\WPTitleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -113,6 +116,35 @@ Route::controller(FooterController::class)->group(function () {
     Route::get('/delete/message/{id}', 'DeleteMessage')->name('delete.message'); 
  });
 
+ //Service Title Route
+ Route::controller(ServiceTitleController::class)->group(function () {
+    Route::get('view', 'ServiceTitle')->name('service.title');
+    Route::get('/edit/serviceTitle/{id}', 'EditServiceTitle')->name('edit.serviceTitle');
+    Route::post('/update/serviceTitle', 'UpdateServiceTitle')->name('update.serviceTitle');
+
+ });
+
+  //Service Information Route
+    Route::controller(ServiceController::class)->group(function () {
+    Route::get('viewService', 'AllServiceInformation')->name('service.info');
+    Route::get('/edit/serviceInformation/{id}', 'EditServiceinfo')->name('edit.serviceInfo');
+
+    Route::get('/add/serviceInfo', 'AddServiceInfo')->name('add.service');
+    Route::post('/store/service', 'StoreServiceInfo')->name('store.service');
+    Route::post('/update/serviceInformation', 'UpdateServiceInfo')->name('update.info');
+    Route::get('/delete/service/{id}', 'DeleteService')->name('delete.service'); 
+
+ });
+
+  //Working Process Title Route
+    Route::controller(WPTitleController::class)->group(function () {
+    Route::get('viewS', 'WPTitle')->name('WP.title');
+
+    Route::get('/edit/WPTitle/{id}', 'EditWPTitle')->name('edit.wptitle');
+     Route::post('/update/WPTitle', 'UpdateWPTitle')->name('update.WPTitle');
+
+ });
+  
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified'])->name('dashboard');
