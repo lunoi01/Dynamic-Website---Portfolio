@@ -13,17 +13,8 @@ use App\Http\Controllers\Home\ContactController;
 use App\Http\Controllers\Home\ServiceController;
 use App\Http\Controllers\Home\ServiceTitleController;
 use App\Http\Controllers\Home\WPTitleController;
+use App\Http\Controllers\Demo\DemoController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('frontend.index');
@@ -149,6 +140,14 @@ Route::controller(FooterController::class)->group(function () {
 
 
  });
+//Demo Controller
+//  Route::controller(DemoController::class)->group(function () {
+//     Route::get('/', 'HomeMain')->name('home');
+
+
+//     Route::get('/about', 'Index')->name('about.page')->middleware('check');
+//     Route::get('/contact', 'ContactMethod')->name('cotact.page');
+// });
   
 Route::get('/dashboard', function () {
     return view('admin.index');
