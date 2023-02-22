@@ -1,6 +1,8 @@
 @extends('frontend.main_master')
 @section('main')
-
+@section('title')
+About | AMS Brilliant Move
+@endsection
 <main>
 
 <!-- breadcrumb-area -->

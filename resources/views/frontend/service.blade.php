@@ -1,6 +1,9 @@
 @extends('frontend.main_master')
 @section('main')
 
+@section('title')
+Service | AMS Brilliant Move
+@endsection
 
 <main>
 
@@ -75,6 +78,9 @@
                     <p>The maximum part of the company’s present strategy is a result of formerly initiated actions and business approaches, but when market conditions take an unanticipated turn, the company requires a strategic reaction to cope with contingencies. Hence, for unforeseen development, a part of the business strategy is formulated as a reasoned response nature of business strategy.</p>
                 </div>
             </div>
+
+
+
             <div class="col-lg-4">
                 <aside class="services__sidebar">
                     <div class="widget">
