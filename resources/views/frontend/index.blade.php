@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-Home | AMS Brilliant Move
+Home | ABC Tuition
 @endsection
 
 <!-- banner-area -->
@@ -132,7 +132,7 @@ Home | AMS Brilliant Move
 <!-- blog-area-end -->
 
 <!-- contact-area -->
-<section class="homeContact">
+<!-- <section class="homeContact">
     <div class="container">
         <div class="homeContact__wrap">
             <div class="row">
@@ -162,7 +162,7 @@ Home | AMS Brilliant Move
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- contact-area-end -->
 
 @endsection

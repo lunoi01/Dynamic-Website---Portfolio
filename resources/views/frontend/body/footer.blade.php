@@ -2,59 +2,60 @@
 $allfooter = App\Models\Footer::find(1);
 @endphp
 
-<footer class="footer">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-lg-4">
-                        <div class="footer__widget">
-                            <div class="fw-title">
-                                <h5 class="sub-title">Contact us</h5>
-                                <h4 class="title">{{ $allfooter->number }}</h4>
-                            </div>
-                            <div class="footer__widget__text">
-                                <p>{{ $allfooter->short_description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="footer__widget">
-                            <div class="fw-title">
-                                <h5 class="sub-title">my address</h5>
-                                <h4 class="title">{{ $allfooter->address }}</h4>
-                            </div>
-                            <div class="fw-title">
-                                <h5 class="sub-title">Email</h5>
-                                <a href="mailto:{{ $allfooter->email }}" class="mail">{{ $allfooter->email }}</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="footer__widget">
-                            <div class="fw-title">
-                                <h5 class="sub-title">Follow me</h5>
-                                <h4 class="title">socially connect</h4>
-                            </div>
-                            <div class="footer__widget__social">
-                                <p>Lorem ipsum dolor sit amet enim. <br> Etiam ullamcorper.</p>
-                                <ul class="footer__social__list">
-                                    <li><a href="{{ $allfooter->facebook }}"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="{{ $allfooter->twitter }}"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright__wrap">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="copyright__text text-center">
-                                <p>{{ $allfooter->copyright }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body> -->
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+</body>
+</html>

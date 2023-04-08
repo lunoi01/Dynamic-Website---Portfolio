@@ -32,7 +32,7 @@ $allMultiImage = App\Models\MultiImage::all();
                             <p>{{ $aboutpage->short_description }}</p>
                         </div>
                     </div>
-                    <p class="desc">{{ $aboutpage->long_description }}</p>
+                    <p class="desc">{!! $aboutpage->long_description !!}</p>
                     <a href="about.html" class="btn">Download my resume</a>
                 </div>
             </div>

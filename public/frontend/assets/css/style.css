@@ -228,14 +228,15 @@ label {
 /*=============================
     - Bootstrap Custom
 =============================*/
-.container {
+/* .container {
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px; } */
 
-.row {
-  --bs-gutter-x: 30px; }
+/* .row {
+  --bs-gutter-x: 30px; 
+} */
 
-.gutter-y-30 {
+/* .gutter-y-30 {
   --bs-gutter-y: 30px; }
 
 .gx-0 {
@@ -260,7 +261,7 @@ label {
       max-width: 100%; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .custom-container {
-      max-width: 540px; } }
+      max-width: 540px; } } */
 
 /*=============================
     - Button Style
@@ -3921,7 +3922,7 @@ Breadcrumb
 =============================*/
 .blog {
   position: relative;
-  padding: 130px 0 365px; }
+  padding: 130px 0 150px; }
   @media (max-width: 991.98px) {
     .blog {
       padding: 120px 0 355px; } }
@@ -4858,63 +4859,79 @@ Breadcrumb
 13. Footer
 =============================*/
 .footer {
-  background: #191B1E;
-  padding: 310px 0 95px; }
-  @media (max-width: 767.98px) {
-    .footer {
-      padding: 310px 0 20px; } }
-  .footer__widget {
-    margin-bottom: 50px; }
-    .footer__widget .fw-title {
-      margin-bottom: 23px; }
-      .footer__widget .fw-title .sub-title {
-        color: #898989;
-        font-family: "Roboto", sans-serif;
-        font-size: 12px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        line-height: 1;
-        margin-bottom: 15px; }
-      .footer__widget .fw-title .title {
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-size: 22px;
-        text-transform: uppercase;
-        margin-bottom: 0; }
-    .footer__widget p {
-      margin-bottom: 0;
-      color: #898989;
-      font-size: 15px; }
-  .footer__widget__text {
-    margin-right: 40px; }
-  .footer__widget__address .mail {
-    color: #fff;
-    font-size: 15px; }
-    .footer__widget__address .mail:hover {
-      color: #FCAF17; }
-  .footer__social__list {
-    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 13px; }
-    .footer__social__list li:not(:last-child) {
-      margin-right: 17px; }
-    .footer__social__list li a {
-      display: block;
-      font-size: 13px;
-      color: #898989;
-      line-height: 1; }
-      .footer__social__list li a:hover {
-        color: #fff; }
-
-.copyright__wrap {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #2D2D39; }
-  .copyright__wrap .copyright__text p {
-    font-size: 14px;
-    margin-bottom: 0;
-    color: #898989; }
+    background-color: #0e3265;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  
+  }
+}
 
 /*=============================
 14. Preloader

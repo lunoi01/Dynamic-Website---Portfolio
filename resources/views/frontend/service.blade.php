@@ -2,7 +2,7 @@
 @section('main')
 
 @section('title')
-Service | AMS Brilliant Move
+Service | ABC Tuition
 @endsection
 
 <main>
@@ -118,7 +118,7 @@ Service | AMS Brilliant Move
 
 
 <!-- contact-area -->
-<section class="homeContact homeContact__style__two">
+<!-- <section class="homeContact homeContact__style__two">
     <div class="container">
         <div class="homeContact__wrap">
             <div class="row">
@@ -146,7 +146,7 @@ Service | AMS Brilliant Move
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- contact-area-end -->
 
 </main>
