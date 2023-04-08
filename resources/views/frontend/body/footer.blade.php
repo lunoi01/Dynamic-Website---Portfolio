@@ -2,41 +2,27 @@
 $allfooter = App\Models\Footer::find(1);
 @endphp
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Footer Design</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body> -->
-
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="footer-col">
   	 			<h4>company</h4>
   	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our services</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">affiliate program</a></li>
+  	 				<li><a href="{{ route('home.about')}}">about us</a></li>
+  	 				<li><a href="{{ route('home.service')}}">our services</a></li>
+  	 				<li><a href="{{ route('home.portfolio')}}">portfolio</a></li>
+  	 				<li><a href="{{ route('home.blog')}}">blogs</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>get help</h4>
   	 			<ul>
   	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">shipping</a></li>
-  	 				<li><a href="#">returns</a></li>
-  	 				<li><a href="#">order status</a></li>
-  	 				<li><a href="#">payment options</a></li>
+  	 				<li><a href="{{ route('contact.me')}}">Contact Us</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>online shop</h4>
+  	 			<h4>Our Address</h4>
   	 			<ul>
   	 				<li><a href="#">watch</a></li>
   	 				<li><a href="#">bag</a></li>

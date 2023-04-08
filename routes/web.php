@@ -142,6 +142,8 @@ Route::controller(FooterController::class)->group(function () {
     Route::get('/edit/WPTitle/{id}', 'EditWPTitle')->name('edit.wptitle');
      Route::post('/update/WPTitle', 'UpdateWPTitle')->name('update.wptitle');
 
+     Route::get('/delete/WPTitle/{id}', 'DeleteWP')->name('delete.WP');
+
 
  });
 //Demo Controller

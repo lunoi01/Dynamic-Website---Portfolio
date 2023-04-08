@@ -34,7 +34,33 @@
             </div>
             <!-- end row -->
 
-<input type="submit" class="btn btn-info waves-effect waves-light" value="Update Service Title">
+            <div class="row mb-3">
+                <label for="example-text-input" class="col-sm-2 col-form-label">Working Process Image </label>
+                <div class="col-sm-10">
+           <input name="logo" class="form-control" type="file" id="image">
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row mb-3">
+                 <label for="example-text-input" class="col-sm-2 col-form-label">  </label>
+                <div class="col-sm-10">
+            <img id="showImage" class="rounded avatar-lg" src="{{ asset($service->logo) }}" alt="Card image cap">
+                </div>
+            </div>
+
+
+            <div class="row mb-3">
+                <label for="example-text-input" class="col-sm-2 col-form-label">Working Process Description </label>
+                <div class="col-sm-10">
+                    <textarea id="elm1" name="wp_desc">
+                    {{ $service->wp_desc}}
+                    </textarea>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <input type="submit" class="btn btn-info waves-effect waves-light" value="Update Service Title">
             </form>
 
 

@@ -117,21 +117,13 @@
             <li>
                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                     <i class="ri-profile-line"></i>
-                    <span>Working Process Page Setup </span>
+                    <span>Work Process Setup</span>
                 </a>
                 <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="{{ route('WP.title') }}"">Working Process Title </a></li>
-                </ul>
-
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="">Add Working Process</a></li>
-                </ul>
-
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="">All Working Process</a></li>
+                    <li><a href="{{ route('WP.title')}}">All Work Process</a></li>
                 </ul>
             </li>
-
+\
 
 
     </div>
