@@ -40,7 +40,7 @@ $serviceS = App\Models\Service::all();
                         <ul class="services__list">
                             <li>{!! $item->service_point !!}</li>
                         </ul>
-                        <a href="services-details.html" class="btn border-btn">Read more</a>
+                        <!-- <a href="services-details.html" class="btn border-btn">Read more</a> -->
                     </div>
                 </div>
             </div>

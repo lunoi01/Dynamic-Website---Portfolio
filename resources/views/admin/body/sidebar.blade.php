@@ -123,7 +123,20 @@
                     <li><a href="{{ route('WP.title')}}">All Work Process</a></li>
                 </ul>
             </li>
-\
+
+            <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="ri-profile-line"></i>
+                    <span>Feedback Setup</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('all.feedback')}}">All Feedback</a></li>
+                </ul>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('add.feedback')}}">Add Feedback</a></li>
+                </ul>
+            </li>
+
 
 
     </div>
