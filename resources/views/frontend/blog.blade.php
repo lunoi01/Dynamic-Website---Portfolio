@@ -70,15 +70,15 @@ Blog | ABC Tuition
     <div class="pagination-wrap">
         {{ $allblogs->links('vendor.pagination.custom') }}
     </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <aside class="blog__sidebar">
-                                <div class="widget">
-                                    <form action="#" class="search-form">
-                                        <input type="text" placeholder="Search">
-                                        <button type="submit"><i class="fal fa-search"></i></button>
-                                    </form>
-                                </div>
+    </div>
+    <div class="col-lg-4">
+        <aside class="blog__sidebar">
+            <div class="widget">
+                <form action="#" class="search-form">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+            </div>
 
 
         <div class="widget">
@@ -98,10 +98,10 @@ Blog | ABC Tuition
                 </li>
                 @endforeach
 
-                                    </ul>
-                                </div>
+            </ul>
+        </div>
 
-                               <div class="widget">
+        <div class="widget">
             <h4 class="widget-title">Categories</h4>
             <ul class="sidebar__cat">
             	@foreach($categories as $cat)
@@ -110,49 +110,11 @@ Blog | ABC Tuition
             </ul>
         </div>
 
-
-                                <div class="widget">
-                                    <h4 class="widget-title">Recent Comment</h4>
-                                    <ul class="sidebar__comment">
-                                        <li class="sidebar__comment__item">
-                                            <a href="blog-details.html">Rasalina Sponde</a>
-                                            <p>There are many variations of passages of lorem ipsum available, but the majority have</p>
-                                        </li>
-                                        <li class="sidebar__comment__item">
-                                            <a href="blog-details.html">Rasalina Sponde</a>
-                                            <p>There are many variations of passages of lorem ipsum available, but the majority have</p>
-                                        </li>
-                                        <li class="sidebar__comment__item">
-                                            <a href="blog-details.html">Rasalina Sponde</a>
-                                            <p>There are many variations of passages of lorem ipsum available, but the majority have</p>
-                                        </li>
-                                        <li class="sidebar__comment__item">
-                                            <a href="blog-details.html">Rasalina Sponde</a>
-                                            <p>There are many variations of passages of lorem ipsum available, but the majority have</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="widget">
-                                    <h4 class="widget-title">Popular Tags</h4>
-                                    <ul class="sidebar__tags">
-                                        <li><a href="blog.html">Business</a></li>
-                                        <li><a href="blog.html">Design</a></li>
-                                        <li><a href="blog.html">apps</a></li>
-                                        <li><a href="blog.html">landing page</a></li>
-                                        <li><a href="blog.html">data</a></li>
-                                        <li><a href="blog.html">website</a></li>
-                                        <li><a href="blog.html">book</a></li>
-                                        <li><a href="blog.html">Design</a></li>
-                                        <li><a href="blog.html">product design</a></li>
-                                        <li><a href="blog.html">landing page</a></li>
-                                        <li><a href="blog.html">data</a></li>
-                                    </ul>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
+        </aside>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
             <!-- blog-area-end -->
 
 
