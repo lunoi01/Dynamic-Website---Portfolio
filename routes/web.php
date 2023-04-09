@@ -17,6 +17,7 @@ use App\Http\Controllers\Demo\DemoController;
 use App\Http\Controllers\Home\FeedbackController;
 
 
+
 Route::get('/', function () {
     return view('frontend.index');
 });
@@ -156,8 +157,12 @@ Route::controller(FooterController::class)->group(function () {
     Route::get('/delete/feedback/{id}', 'DeleteFeedback')->name('delete.feedback');
     Route::get('/edit/feedback/{id}', 'EditFeedback')->name('edit.feedback');
     Route::post('/update/feedback', 'UpdateFeedback')->name('update.feedback');
-    // Route::get('/contact/message', 'ContactMessage')->name('contact.message');   
-    // Route::get('/delete/message/{id}', 'DeleteMessage')->name('delete.message'); 
+    Route::get('/feedback/multi/Allimage','FeedMultiImage')->name('feedback.multi.image');
+    Route::post('/feedback/store/image','StoreFeedImage')->name('store.feed.image');
+    Route::get('/feed/all/image','AllFeedImage')->name('all.feed.image');
+    Route::get('/all/feed/image/{id}','EditFeedImage')->name('edit.feed.image');
+    Route::post('/update/feed/image', 'UpdateFeedImage')->name('update.feed.image');
+    Route::get('/delete/feed/image/{id}','DeleteFeedImage')->name('delete.feed.image');
  });
 
 

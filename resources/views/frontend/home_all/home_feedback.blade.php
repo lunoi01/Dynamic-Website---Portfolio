@@ -1,6 +1,7 @@
 @php
 
 $feed = \App\Models\Feedback::all();
+$feed_image = \App\Models\FeedImages::all();
 
 @endphp
 
@@ -9,13 +10,10 @@ $feed = \App\Models\Feedback::all();
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 order-0 order-lg-2">
                 <ul class="testimonial__avatar__img">
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img01.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img02.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img03.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img04.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img05.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img06.png') }}" alt=""></li>
-                    <li><img src="{{ asset('frontend/assets/img/images/testi_img07.png') }}" alt=""></li>
+                    @foreach($feed_image as $img)
+                    <li><img src="{{ $img->feed_image }}" alt="XD" width="35%"></li>
+                    @endforeach
+
                 </ul>
             </div>
             <div class="col-xl-5 col-lg-6">

@@ -48,7 +48,21 @@
     </ul>
 </li>
 
-            <li class="menu-title">Pages</li>
+<li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                    <i class="ri-profile-line"></i>
+                    <span>Feedback Setup</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                    <li><a href="{{ route('all.feedback')}}">All Feedback</a></li>
+                    <li><a href="{{ route('add.feedback')}}">Add Feedback</a></li>
+
+                    <li><a href="{{ route('all.feed.image') }}">All Multi Image</a></li>
+                    <li><a href="{{ route('feedback.multi.image')}}">Add Multi Image</a></li>
+                </ul>
+</li>
+
+<li class="menu-title">Pages</li>
 
 <li>
     <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -124,18 +138,7 @@
                 </ul>
             </li>
 
-            <li>
-                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                    <i class="ri-profile-line"></i>
-                    <span>Feedback Setup</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="{{ route('all.feedback')}}">All Feedback</a></li>
-                </ul>
-                <ul class="sub-menu" aria-expanded="false">
-                    <li><a href="{{ route('add.feedback')}}">Add Feedback</a></li>
-                </ul>
-            </li>
+
 
 
 
