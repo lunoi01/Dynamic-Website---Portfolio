@@ -73,14 +73,16 @@
                 </li>
             </ul>
         </div>
-        <div class="blog__next__prev">
+        <!-- <div class="blog__next__prev">
             <div class="row justify-content-between">
                 <div class="col-xl-5 col-md-6">
                     <div class="blog__next__prev__item">
                         <h4 class="title">Previous Post</h4>
                         <div class="blog__next__prev__post">
+                      
                             <div class="blog__next__prev__thumb">
-                                <a href="blog-details.html"><img src="assets/img/blog/blog_prev.jpg" alt=""></a>
+                                <a href=""><img src="assets/img/blog/blog_prev.jpg" alt=""></a>
+                              
                             </div>
                             <div class="blog__next__prev__content">
                                 <h5 class="title"><a href="blog-details.html">Digital Marketing Agency Pricing Guide.</a></h5>
@@ -103,8 +105,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="comment comment__wrap">
+        </div> -->
+        <!-- <div class="comment comment__wrap">
             <div class="comment__title">
                 <h4 class="title">(04) Comment</h4>
             </div>
@@ -197,7 +199,7 @@
                 </div>
                 <button type="submit" class="btn">post a comment</button>
             </form>
-        </div>
+        </div> -->
     </div>
 </div>
 <div class="col-lg-4">
@@ -224,10 +226,10 @@
             	@foreach($allblogs as $all )
                 <li class="rc__post__item">
                     <div class="rc__post__thumb">
-                        <a href="blog-details.html"><img src="{{ asset($all->blog_image) }} " alt=""></a>
+                        <a href="{{ route('blog.details',$all->id) }}"><img src="{{ asset($all->blog_image) }} " alt=""></a>
                     </div>
                     <div class="rc__post__content">
-                        <h5 class="title"><a href="blog-details.html">{{ $all->blog_title }}
+                        <h5 class="title"><a href="{{ route('blog.details',$all->id) }}">{{ $all->blog_title }}
                          </a></h5>
                         <span class="post-date"><i class="fal fa-calendar-alt"></i> {{ Carbon\Carbon::parse($all->created_at)->diffForHumans() }} </span>
                     </div>
@@ -245,7 +247,7 @@
                 @endforeach
             </ul>
         </div>
-        <div class="widget">
+        <!-- <div class="widget">
             <h4 class="widget-title">Recent Comment</h4>
             <ul class="sidebar__comment">
                 <li class="sidebar__comment__item">
@@ -265,23 +267,8 @@
                     <p>There are many variations of passages of lorem ipsum available, but the majority have</p>
                 </li>
             </ul>
-        </div>
-        <div class="widget">
-            <h4 class="widget-title">Popular Tags</h4>
-            <ul class="sidebar__tags">
-                <li><a href="blog.html">Business</a></li>
-                <li><a href="blog.html">Design</a></li>
-                <li><a href="blog.html">apps</a></li>
-                <li><a href="blog.html">landing page</a></li>
-                <li><a href="blog.html">data</a></li>
-                <li><a href="blog.html">website</a></li>
-                <li><a href="blog.html">book</a></li>
-                <li><a href="blog.html">Design</a></li>
-                <li><a href="blog.html">product design</a></li>
-                <li><a href="blog.html">landing page</a></li>
-                <li><a href="blog.html">data</a></li>
-            </ul>
-        </div>
+        </div> -->
+ 
     </aside>
 </div>
 </div>

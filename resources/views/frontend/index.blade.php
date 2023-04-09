@@ -28,7 +28,7 @@ Home | ABC Tuition
 <!-- portfolio-area-end -->
 
 <!-- partner-area -->
-@include('frontend.home_all.home_partner')
+<!-- @include('frontend.home_all.home_partner') -->
 <!-- partner-area-end -->
 
 <!-- testimonial-area -->

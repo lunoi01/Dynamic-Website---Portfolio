@@ -4,7 +4,7 @@ $serviceN = App\Models\ServiceTitle::find(1);
 $serviceS = App\Models\Service::all();
 @endphp
 
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <div class="services__title__wrap">
             <div class="row align-items-center justify-content-between">
@@ -27,20 +27,19 @@ $serviceS = App\Models\Service::all();
                 <div class="services__item">
                     <div class="services__thumb">
                         
-                        <a href="services-details.html"><img src="{{ $item->service_image }}" alt=""></a>
+                        <a href=""><img src="{{ $item->service_image }}" alt=""></a>
                         
                     </div>
                     <div class="services__content">
-                        <div class="services__icon">
+                        <!-- <div class="services__icon">
                             <img class="light" src="{{ asset('frontend/assets/img/icons/services_light_icon01.png') }}" alt="">
                             <img class="dark" src="{{ asset('frontend/assets/img/icons/services_icon01.png') }}" alt="">
-                        </div>
-                        <h3 class="title"><a href="services-details.html">{{ $item->service_category }}</a></h3>
+                        </div> -->
+                        <h3 class="title">{{ $item->service_category }}</h3>
                         <p>{{ $item->service_description }}.</p>
                         <ul class="services__list">
                             <li>{!! $item->service_point !!}</li>
                         </ul>
-                        <!-- <a href="services-details.html" class="btn border-btn">Read more</a> -->
                     </div>
                 </div>
             </div>

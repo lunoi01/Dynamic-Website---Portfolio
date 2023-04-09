@@ -17,17 +17,13 @@ $allfooter = App\Models\Footer::find(1);
   	 		<div class="footer-col">
   	 			<h4>get help</h4>
   	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
   	 				<li><a href="{{ route('contact.me')}}">Contact Us</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>Our Address</h4>
   	 			<ul>
-  	 				<li><a href="#">watch</a></li>
-  	 				<li><a href="#">bag</a></li>
-  	 				<li><a href="#">shoes</a></li>
-  	 				<li><a href="#">dress</a></li>
+  	 				<li><a href="#">Lot 354, Jalan Megah Indah, Taman Alam Damai 43290 Selangor Malaysia</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">

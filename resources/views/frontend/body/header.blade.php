@@ -19,10 +19,10 @@ $route = Route::current()->getName();
                                         <ul class="navigation">
                                         <li class="{{ ($route == '')? 'active' : '' }}"><a href="{{ url('/') }}">Home</a></li>
 
-                                        <li class="{{ ($route == 'home.about')? 'active' : '' }}"><a href="{{ route('home.about') }}">About</a></li>
+                                        <li class="{{ ($route == 'home.about')? 'active' : '' }}"><a href="{{ url('/#aboutSection') }}">About</a></li>
 
 
-                                            <li class= "{{ ($route == 'home.service')? 'active' : '' }}"><a href="{{ route('home.service') }}">Services</a></li>
+                                            <li class= "{{ ($route == 'home.service')? 'active' : '' }}"><a href="{{ url('/#services') }}">Services</a></li>
                                             <li class= "{{ ($route == 'home.portfolio')? 'active' : '' }}"><a href="{{ route('home.portfolio') }}">Portfolio</a>
                                                 <!-- <ul class="sub-menu">
                                                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -32,11 +32,10 @@ $route = Route::current()->getName();
                                             <li class= "{{ ($route == 'home.blog')? 'active' : '' }}"><a href="{{ route('home.blog') }}">Our Blog</a>
 
                                             </li>
-                                            <li class= "{{ ($route == 'contact.me')? 'active' : '' }}"><a href="{{ route('contact.me') }}">contact me</a></li>
                                         </ul>
                                     </div>
                                     <div class="header__btn d-none d-md-block">
-                                        <a href="contact.html" class="btn">Contact me</a>
+                                        <a href="{{ route('contact.me') }}" class="btn">Contact me</a>
                                     </div>
                                 </nav>
                             </div>
